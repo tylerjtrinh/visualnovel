@@ -355,8 +355,12 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
-
+    #add gui.main_menu_background
+    add "bg/staircase.png"
+    add Solid("#00000080")  # black at 50% opacity
+    # Title text center-left (large)
+    # Title text center-left (large)
+    text "Pass On" style "my_title" xalign 0.45 yalign 0.38
     ## This empty frame darkens the main menu.
     frame:
         style "main_menu_frame"

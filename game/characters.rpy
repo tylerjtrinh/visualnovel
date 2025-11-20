@@ -1,9 +1,26 @@
 define base_char = Character(color="#FFFFFF", ctc="ctc", ctc_pause="ctc", ctc_position="fixed")
 define narrator = Character(kind=base_char)
 
+transform side_left_base:
+    xalign 0.12
+    yalign 1.0
+    anchor (0.5, 1.0)
+
 #Main Characters
-image alex = "sprites/alex.png"
-image valerie = "sprites/valerie.png"
+image alex normal = "sprites/alex/alex_normal.png"
+image valerie normal = "sprites/valerie/val_normal.png"
+
+image side valerie normal = Transform(im.Scale("sprites/valerie/val_normal.png", 450, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45, yoffset=-25)
+image side valerie happy = Transform(im.Scale("sprites/valerie/val_happy.png", 390, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45, yoffset=-25)
+image side valerie mad   = Transform(im.Scale("sprites/valerie/val_angry.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), yoffset=-25)
+
+image side alex normal = Transform(im.Scale("sprites/alex/alex_normal.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
+
 
 define a = Character("Alex", image="alex")
 define v = Character("Valerie", color="#E37BD0", image="valerie")
+
+transform side_left:
+    xalign 0.12   # horizontal position (0.0 = left, 1.0 = right)
+    yalign 1.0    # put the anchor at the bottom of the screen
+    anchor (0.5, 1.0)   # anchor point: (x, y) of the image; bottom center

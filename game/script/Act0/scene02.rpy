@@ -1,26 +1,20 @@
 
-image bg living_room = "bg/LivingRoomTest.png"
-
 label a0s2:
-    window hide
-    scene black
+    scene black with fade
+    pause 1.0
+    centered "After a very lengthy explanation..."
+    
+    scene bg starry_sky with dissolve
+
+    v normal "…and that led to people thinking, 'Okay, how are those spots visible sometimes and not visible other times?' Which leads to the creation of myths and stories about those extraterrestrial bodies…"
+    v "...and cut to now, where those stories have been produced and reproduced and spread and evolved over generations to what we know of now."
+    a normal "I see…"
+    a "Well, let’s stay here for a little bit longer, then."
+
+    scene bg starry_sky with dissolve
     pause 1.0
 
-    scene bg living_room with dissolve
-    
-    v "Did you fall asleep again ya fucking dumbass?!"
-
-    menu:
-        "No... totally not my eyes were just closed for a long time":
-            pass
-    
-    
-    a "No... totally not my eyes were just closed for a long time"
 
     
-    v "Sure..."
     
-    a "Anyways... the stars are quite pretty tonight"
-
-    v "They really are aren't they?"
-
+    
