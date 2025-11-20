@@ -3,11 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define in_eye = ImageDissolve("transitions/eye.png", 2.0)
-define out_eye = ImageDissolve("transitions/eye.png", 6.0, reverse=True)
 
-image bg living_room = "bg/living-room.png"
-image bg starry_sky = "bg/sky.png"
 
 label a0s1:
     window hide
@@ -20,17 +16,17 @@ label a0s1:
     menu:
         "No… I was just resting my eyes, I swear.":
             pass
-    a normal "No… I was just resting my eyes, I swear."
+    a awksmile "No… I was just resting my eyes, I swear."
 
     v normal "Sure you were..."
     
-    a "If my snorin bugs you that much, you can always leave."
+    a slightsmile "If my snorin bugs you that much, you can always leave."
 
     v "Tch… Nice try, Alex. You’re not getting rid of me any time soon~"
     
     v "...Come on, don't you love this view?"
 
-    a "The stars are quite nice tonight."
+    a normal "The stars are quite nice tonight."
 
     v "Mm-hm."
 
@@ -67,7 +63,7 @@ label a0s1:
     #zoom into mars?
 
     #continue from here
-    v "What’re the odds of that?"
+    v normal "What’re the odds of that?"
     a "Well, I imagine…"
     v "Like, Venus and Mars have very different orbits, so it is quite curious that they’re both visible on this night."
     v "Maybe it means something really special’s gonna happen!"
@@ -78,8 +74,8 @@ label a0s1:
     a "…"
     v "Well, they’re just really cool…!"
     a "Yeah, so I’ve heard."
-    a "Anyway… Mind if I continue enjoying your lecture, dear~?"
-    v "Oh, you shouldn’t have~"
+    a slightsmile "Anyway… Mind if I continue enjoying your lecture, dear~?"
+    v maimeng "Oh, you shouldn’t have~"
 
 
     #scene change
