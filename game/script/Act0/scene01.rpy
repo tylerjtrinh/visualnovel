@@ -9,7 +9,7 @@ label a0s1:
     window hide
     scene black
     pause 1.0
-    play music "Garden_Scene_1.mp3"
+
     scene bg starry_sky with in_eye
     v mad "Hey… Hey! Did you fall asleep again?"
 
@@ -30,7 +30,6 @@ label a0s1:
 
     v "Mm-hm."
 
-    scene bg wife_grass
     #background change here
     scene bg grass_cutscene with fade
     v "You know..."

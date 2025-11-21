@@ -62,7 +62,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "Title_Theme.mp3"
+define config.main_menu_music = "placeholderMenu.mp3"
 
 
 ## Transitions #################################################################
@@ -121,6 +121,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## other number is the number of characters per second to type out.
 
 default preferences.text_cps = 45
+
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
