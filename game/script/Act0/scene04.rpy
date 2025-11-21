@@ -5,6 +5,9 @@ label a0s4:
     scene bg white
     show truck
     play sound "automobile-horn-153260.mp3"
+    stop music
     a "OH SHIT-{w=0.9}"
     show truck
     play sound "car-crash-sound-effect-376874.mp3"
+    hide truck
+    pause 3.0

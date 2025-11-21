@@ -1,7 +1,8 @@
 image bg living_room = "bg/living-room.png"
 image bg starry_sky = "bg/sky.png"
 image bg grass = "bg/grass.png"
-image bg white = #FFFFFF
+image bg white = "#FFFFFF"
+image bg wife_grass = "cutscene_extrarender.png"
 
 image bg grass_cutscene = "/bg/grass-cutscene.png"
 
