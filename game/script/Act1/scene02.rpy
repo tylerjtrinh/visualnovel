@@ -7,7 +7,7 @@ label a1s2:
     stop music
     a "Wait- {size=*3}WHAT THE FUCK?!{/size}"
     show valerie ghost 
-    a "{cps=3}How{/cps} {cps=*1.5}how{/cps} {cps=*1.5}how{/cps}{cps=*1.5}how{/cps}{cps=*1.5}how{/cps} {cps=*2}how-{/cps}{nw}"
+    a "{cps=3}How{/cps} {cps=*1.5}how{/cps} {cps=*1.5}how{/cps}{cps=*1.5}how{/cps} {cps=*1.5}how{/cps} {cps=*2}how-{/cps}{nw=2}"
     play music "Title_Theme.mp3"
     v "Uh... it's kind of a long story."
     a "HOW ARE YOU SO CALM ABOUT THIS?!"
