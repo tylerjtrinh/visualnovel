@@ -31,33 +31,35 @@ label a0s1:
     v "Mm-hm."
 
     #background change here
+    scene bg grass_cutscene with fade
     v "You know..."
 
     a "Yea?"
     
     v "You spend too much time looking at the ground."
     
-    v happy "You gotta look upwards sometimes~!"
+    v "You gotta look upwards sometimes~!"
     
     menu:
         "Maybe I should.":
             a "It’s not good for me to have such bad posture when I’m gardening, anyway."
             a "Looking at the stars seems like a good excuse for a break."
-            v normal "Exactly!"
+            v "Exactly!"
             v "Gotta do something other than the usual...  ya know?"
             pass
         "Hmm... maybe not.":
             a "I mean like my garden's got everything I need."
             a "It's hard work keeping the garden healthy, but its rewarding."
-            v normal "Yeah, but you gotta stop working long enough to enjoy the reward."
+            v "Yeah, but you gotta stop working long enough to enjoy the reward."
             v "Live a little!"
             pass
 
-    v normal "Oh, look!"
-    #background change here Short pause. Maybe transition back to the starry sky b
+    v "Oh, look!"
+    #background change here Short pause. Maybe transition back to the starry sky 
+    scene bg starry_sky with fade
     v happy "You can see Venus so clearly tonight!"
 
-    a "Really?"
+    a normal "Really?"
     
     v "And… oh, I think I see Mars up there as well!"
     #zoom into mars?
