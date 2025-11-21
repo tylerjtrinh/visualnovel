@@ -10,4 +10,5 @@ label a0s4:
     show truck
     play sound "car-crash-sound-effect-376874.mp3"
     hide truck
-    pause 3.0
+    scene black with in_shatter
+    pause 2.0

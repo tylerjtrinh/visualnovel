@@ -30,7 +30,6 @@ label a0s1:
 
     v "Mm-hm."
 
-    scene bg wife_grass
     #background change here
     scene bg grass_cutscene with fade
     v "You know..."

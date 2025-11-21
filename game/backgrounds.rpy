@@ -5,7 +5,10 @@ image bg white = "#FFFFFF"
 image bg wife_grass = "bg/cutscene_extrarender.png"
 image bg garden dead = "bg/garden-dead.PNG"
 image bg grass_cutscene = "bg/grass-cutscene.png"
+image bg truckkun = "sprites/truck.png"
 image staircase = "bg/staircase.PNG"
 #transitions
 define in_eye = ImageDissolve("transitions/eye.png", 2.0)
 define out_eye = ImageDissolve("transitions/eye.png", 6.0, reverse=True)
+
+define in_shatter = ImageDissolve("transitions/shatter.png", 2.0)

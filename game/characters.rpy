@@ -24,6 +24,8 @@ image side alex slightsmile = Transform(im.Scale("sprites/alex/alex_smileslight.
 image side alex angry = Transform(im.Scale("sprites/alex/alex_angry.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
 image side alex shocked = Transform(im.Scale("sprites/alex/alex_shocked.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
 
+image side ryan normal = Transform(im.Scale("sprites/ryan/ryan_default.png", 450, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45, yoffset=-25)
+
 image truck = "sprites/truck.png"
 define a = Character("Alex", image="alex")
 define v = Character("Valerie", color="#E37BD0", image="valerie")
