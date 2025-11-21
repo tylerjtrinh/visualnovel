@@ -20,7 +20,6 @@ label splashscreen:
 # The game starts here.
 label start:
     call a0 from _call_a0
-    call a1
     return
 
 #Minigame screens

@@ -28,8 +28,6 @@ label a0s3:
     v sad "...It doesn’t matter. We can talk about it later."
     a slightsmile "No, something’s on your mind. Just tell me."
     v "It’s not something I can just spit out-"
-    a "if you see me, this page was updated"
-
 
 
     
