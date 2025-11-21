@@ -27,12 +27,15 @@ label a1s3:
     v "So like…"
     v "Just don't worry about it~♩"
     a "Uh… alright."
+    stop music
     play audio "fast-knocking-on-door-352704.mp3"
     a "Oh, that must be Ryan."
     v "Ryan{cps=*.5}…{/cps}"
     v "Uh… wait, who was this guy again?"
     a "Just a college friend."
     show staircase
+    show ryan normal
+    play music "Title_Theme.mp3"
     r "Eyy, Alex! Good to see ya again!"
     a "Hi."
     r "Looks like you're doing better."
