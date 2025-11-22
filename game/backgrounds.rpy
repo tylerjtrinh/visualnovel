@@ -11,4 +11,8 @@ image staircase = "bg/staircase.PNG"
 define in_eye = ImageDissolve("transitions/eye.png", 2.0)
 define out_eye = ImageDissolve("transitions/eye.png", 6.0, reverse=True)
 
-define in_shatter = ImageDissolve("transitions/shatter.png", 2.0)
+define in_shatter = ImageDissolve("transitions/shatter.png", 1.0)
+
+define in_confused = ImageDissolve("transitions/039.jpg", 3.0)
+
+define in_spiral = ImageDissolve("transitions/spiral2.png", 1.5)

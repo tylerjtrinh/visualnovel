@@ -2,9 +2,9 @@ label a1s4:
     #no minigames yet, that will take a long time
     menu: 
         "unimplemented minigame option: annoy this kid":
-            call a1s4Wife 
+            call a1s4Wife from _call_a1s4Wife 
         "unimplemented minigame option: make tea for this kid":
-            call a1s4Anti
+            call a1s4Anti from _call_a1s4Anti
 
 
 label a1s4Anti: 

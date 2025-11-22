@@ -1,5 +1,5 @@
 label a1s3: 
-    show bg garden dead 
+    show bg garden dead with in_spiral
     a "Here it is… or, what’s left of it."
     v "Damn…Seems pretty bad."
     a "No shit."

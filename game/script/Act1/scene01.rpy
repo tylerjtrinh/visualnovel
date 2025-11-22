@@ -1,5 +1,5 @@
 label a1s1: 
-    show bg starry_sky
+    scene bg living_room with in_confused
     play music "Garden_Scene_1.mp3"
     a """
     Another nightmare... same as every other...
@@ -8,10 +8,6 @@ label a1s1:
     """
 
     play audio "footsteps-4.mp3"
-
-    show bg living_room
-
-
     a "..."
     
     play audio "cell-phone-vibrate-1.mp3"

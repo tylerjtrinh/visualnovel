@@ -27,7 +27,7 @@ image side alex shocked = Transform(im.Scale("sprites/alex/alex_shocked.png",   
 image side ryan normal = Transform(im.Scale("sprites/ryan/ryan_default.png", 450, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45, yoffset=-25)
 
 image truck = "sprites/truck.png"
-define a = Character("Alex", image="alex")
+define a = Character("Alex", color="#0000FF", image="alex")
 define v = Character("Valerie", color="#E37BD0", image="valerie")
 define r = Character("Ryan", color="#C89D7C", image = "ryan")
 transform side_left:
