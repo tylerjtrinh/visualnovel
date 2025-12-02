@@ -10,7 +10,7 @@ label a0s1:
     scene black
     pause 1.0
     play music "Garden_Scene_1.mp3"
-    scene bg starry_sky with in_eye
+    scene bg starry_sky with in_confused
     v mad "Hey… Hey! Did you fall asleep again?"
 
     menu:
@@ -20,7 +20,7 @@ label a0s1:
 
     v normal "Sure you were..."
     
-    a slightsmile "If my snorin bugs you that much, you can always leave."
+    a slightsmile "If my snoring bugs you that much, you can always leave."
 
     v "Tch… Nice try, Alex. You’re not getting rid of me any time soon~"
     
@@ -77,7 +77,7 @@ label a0s1:
     v "Well, they’re just really cool…!"
     a "Yeah, so I’ve heard."
     a slightsmile "Anyway… Mind if I continue enjoying your lecture, dear~?"
-    v maimeng "Oh, you shouldn’t have~"
+    v maimeng "{i}Oh, you shouldn’t have~{/i}"
 
 
     #scene change

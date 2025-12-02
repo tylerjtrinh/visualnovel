@@ -349,6 +349,27 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+# Text style for the button label (important: name should be prefix + "_text")
+style mm_btn is default:
+    background "#451348"
+    hover_background "#87395c"
+    insensitive_background "#D48BA6"
+    xminimum 340
+    xmaximum 340
+    yminimum 100
+    ymaximum 100
+    padding (0, 16)
+    text_align 0.5
+    xalign 0.5
+    bottom_margin 18
+
+style mm_btn_text is button_text:
+    font "menu.ttf"         
+    color "#080808"
+    size 38
+    xalign 0.5
+
+
 
 screen main_menu():
 
@@ -360,25 +381,36 @@ screen main_menu():
     add Solid("#00000080")  # black at 50% opacity
     # Title text center-left (large)
     # Title text center-left (large)
-    text "Pass On" style "my_title" xalign 0.45 yalign 0.38
+    text "Pass On" xpos 0.28 ypos 0.36 size 120 font "test.otf" color "#FFF" outlines [(3, "#000", 0, 0)]
+    #text "Pass On" style "my_title" xalign 0.45 yalign 0.38
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    ##frame:
+    ##    style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    ##use navigation
+    
+    #if gui.show_name:
+    #
+    #       vbox:
+    #          style "main_menu_vbox"
+    #
+    #           text "[config.name!t]":
+    #              style "main_menu_title"
+    #
+    #         text "[config.version]":
+    #            style "main_menu_version" """
+    vbox:
+        xalign 0.75
+        ypos 0.36
+        spacing 22
 
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+        textbutton "New Game" action Start() style "mm_btn" text_style "mm_btn_text"
+        textbutton "Load" action ShowMenu('load') style "mm_btn" text_style "mm_btn_text"
+        textbutton "Settings" action ShowMenu('preferences') style "mm_btn" text_style "mm_btn_text"
+        textbutton "About" action ShowMenu('about') style "mm_btn" text_style "mm_btn_text"
+        textbutton "Exit" action Quit() style "mm_btn" text_style "mm_btn_text"
 
 
 style main_menu_frame is empty
@@ -408,7 +440,6 @@ style main_menu_title:
 
 style main_menu_version:
     properties gui.text_properties("version")
-
 
 ## Game Menu screen ############################################################
 ##

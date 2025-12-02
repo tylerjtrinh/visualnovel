@@ -16,7 +16,7 @@ label a0s3:
     a "Why not? Can’t I be happy where I am now?"
     v "...It’s getting late. Maybe we should start heading back."
     a "Val… you seem upset."
-    v "I’m not."
+    v "{i}I’m not.{/i}"
     a "Is this about the dream thing?"
     v "..."
     a "I meant what I said, you know. My dreams are fulfilled! We’re married, we have a beautiful home… What else do we need?"

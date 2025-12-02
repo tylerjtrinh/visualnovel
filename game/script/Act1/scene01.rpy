@@ -1,4 +1,5 @@
 label a1s1: 
+
     scene bg living_room with in_confused
     play music "Garden_Scene_1.mp3"
     a """

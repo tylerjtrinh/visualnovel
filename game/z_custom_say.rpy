@@ -5,12 +5,17 @@ init python:
 
 # Dialog box styles 
 style unified_dialog_outer:
-    background Solid("#1a1a1a66")
+    background Solid("#1a1a1ada")
     xpadding 3
     ypadding 3
 
 style unified_dialog_inner:
-    background Solid("#2a2a2a66")
+    background Solid("#2a2a2ada")
+    xpadding 30
+    ypadding 20
+
+style unified_dialog_top:
+    background Solid("#2a2a2ada")
     xpadding 30
     ypadding 20
 
@@ -85,6 +90,8 @@ screen say(who, what):
 
                     # Dialog text positioned under name
                     text what id "what" style "unified_dialogue_text" xpos 0 ypos 35
+
+                    
 
 # CHOICE screen 
 screen choice(items):

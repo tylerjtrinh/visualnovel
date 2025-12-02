@@ -20,7 +20,7 @@ image side valerie maimeng   = Transform(im.Scale("sprites/valerie/val_maimeng.p
 image side alex normal = Transform(im.Scale("sprites/alex/alex_normal.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
 image side alex sad = Transform(im.Scale("sprites/alex/alex_sad.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
 image side alex awksmile = Transform(im.Scale("sprites/alex/alex_awksmile.png",   450, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
-image side alex slightsmile = Transform(im.Scale("sprites/alex/alex_smileslight.png",   500, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45)
+image side alex slightsmile = Transform(im.Scale("sprites/alex/alex_smileslight.png",   500, 480), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45)
 image side alex angry = Transform(im.Scale("sprites/alex/alex_angry.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
 image side alex shocked = Transform(im.Scale("sprites/alex/alex_shocked.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
 
