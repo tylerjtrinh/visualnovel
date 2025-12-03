@@ -15,4 +15,7 @@ define in_shatter = ImageDissolve("transitions/shatter.png", 1.0)
 
 define in_confused = ImageDissolve("transitions/039.jpg", 3.0)
 
-define in_spiral = ImageDissolve("transitions/spiral2.png", 1.5)
+define in_spiral = ImageDissolve("transitions/spiral2.png", 0.5)
+define out_spiral = ImageDissolve("transitions/spiral2.png", 0.5, reverse=True)
+
+define in_spiral2 = ImageDissolve("transitions/039.jpg", 0.5)

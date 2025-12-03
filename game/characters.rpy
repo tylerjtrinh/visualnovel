@@ -10,6 +10,7 @@ transform side_left_base:
 image alex normal = "sprites/alex/alex_normal.png"
 image valerie normal = "sprites/valerie/val_normal.png"
 image ryan normal = "sprites/ryan/ryan_default.png"
+image valerie ghost = Transform(im.Scale("sprites/valerie/val_ghost.png", 900, 1000))
 
 image side valerie normal = Transform(im.Scale("sprites/valerie/val_normal.png", 450, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45, yoffset=-25)
 image side valerie happy = Transform(im.Scale("sprites/valerie/val_happy.png", 390, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45, yoffset=-25)

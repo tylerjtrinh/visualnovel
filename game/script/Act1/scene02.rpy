@@ -7,7 +7,15 @@ label a1s2:
     stop music
     a "Wait- {size=*3}WHAT THE FUCK?!{/size}"
     play music "Open Casket.mp3"
-    show valerie ghost 
+    scene black with in_spiral
+    show screen title_card_display("Missed me?")
+    pause 1
+    show valerie ghost with in_spiral
+    pause 0.5
+    hide screen title_card_display with out_spiral
+    scene bg living_room with in_spiral2
+    show valerie ghost
+
     a "{cps=3}How{/cps} {cps=*1.5}how{/cps} {cps=*1.5}how{/cps}{cps=*1.5}how{/cps} {cps=*1.5}how{/cps} {cps=*2}how-{/cps}{nw=2}"
     v "Uh... it's kind of a long story."
     a "HOW ARE YOU SO CALM ABOUT THIS?!"
