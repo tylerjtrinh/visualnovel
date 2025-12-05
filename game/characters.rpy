@@ -1,5 +1,5 @@
 define base_char = Character(color="#FFFFFF", ctc="ctc", ctc_pause="ctc", ctc_position="fixed")
-define narrator = Character(kind=base_char)
+#define narrator = Character(kind=base_char)
 
 transform side_left_base:
     xalign 0.12
@@ -26,11 +26,20 @@ image side alex angry = Transform(im.Scale("sprites/alex/alex_angry.png",   400,
 image side alex shocked = Transform(im.Scale("sprites/alex/alex_shocked.png",   400, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0))
 
 image side ryan normal = Transform(im.Scale("sprites/ryan/ryan_default.png", 450, 500), xalign=0.12, yalign=1.0, anchor=(0.5, 1.0), xoffset=-45, yoffset=-25)
+image side ryan angry = Transform(im.Scale("sprites/ryan/ryan_anger.png", 450, 500))
+image side ryan rage = Transform(im.Scale("sprites/ryan/ryan_rage.png", 450, 500))
 
+image side jason normal = Transform(im.Scale("sprites/coworker/Coworker_default.png", 400, 500))
+image side jason angry = Transform(im.Scale("sprites/coworker/Coworker_angry.png", 400, 500))
+image side jason serious = Transform(im.Scale("sprites/coworker/Coworker_serious.png", 400, 500))
+image side jason sigh = Transform(im.Scale("sprites/coworker/Coworker_sigh.png", 400, 500))
+image side jason positive = Transform(im.Scale("sprites/coworker/Coworker_positive.png", 400, 500))
 image truck = "sprites/truck.png"
 define a = Character("Alex", color="#0000FF", image="alex")
 define v = Character("Valerie", color="#E37BD0", image="valerie")
 define r = Character("Ryan", color="#C89D7C", image = "ryan")
+define j = Character("Jason", color="#7b42f5", image="jason")
+define narrator = Character(" ", color="#000000", image="null")
 transform side_left:
     xalign 0.12   # horizontal position (0.0 = left, 1.0 = right)
     yalign 1.0    # put the anchor at the bottom of the screen

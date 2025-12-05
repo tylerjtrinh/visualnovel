@@ -5,7 +5,7 @@ label a1s2:
     a "Yeah..."
     a "{cps=1}..{/cps}{nw}"
     stop music
-    a "Wait- {size=*3}WHAT THE FUCK?!{/size}"
+    a shocked "Wait- {size=*3}WHAT THE FUCK?!{/size}"
     play music "Open Casket.mp3"
     scene black with in_spiral
     show screen title_card_display("Missed me?")
@@ -23,5 +23,5 @@ label a1s2:
     v "And I had one month to find my way back to you."
     v "I did say I would never leave you."
     a "{cps=*1.4}That's...{/cps}{nw}"
-    a "Sorry, I'm just kinda overwhelmed right now"
+    a slightsmile "Sorry, I'm just kinda overwhelmed right now"
     a "{size=*.7}I gotta lay down, this is a lot to take in…{/size}"

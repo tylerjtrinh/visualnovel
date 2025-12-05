@@ -33,11 +33,14 @@ label a1s3:
     v "Ryan{cps=*.5}…{/cps}"
     v "Uh… wait, who was this guy again?"
     a "Just a college friend."
-    show staircase
-    show ryan normal
+    scene loadingscreen with dissolve
+    show screen title_card_display("Loading...")
+    pause 1.0
+    hide screen title_card_display with dissolve
+    show staircase with dissolve
     play music "Title_Theme.mp3"
-    r "Eyy, Alex! Good to see ya again!"
-    a "Hi."
+    r normal "Eyy, Alex! Good to see ya again!"
+    a normal "Hi."
     r "Looks like you're doing better."
     a "Yeah, just a little."
     r "Well, in that case…" 
@@ -58,6 +61,7 @@ label a1s3:
     v "You were friends with this dude?"
     r "And they'll be twice as hot as–"
     a "Good lord, Ryan. Can't you just let bygones be bygones?"
+    show valerie ghost with in_spiral
     v "Alex, we might need to kill this dude."
     a "{size=*.5}I wouldn't go that far, but...{/size}"
     r "What was that?"

@@ -53,7 +53,7 @@ screen say(who, what):
     zorder 100
 
     # Check for centered text
-    if who is None or who == "" or who == "centered" or str(who).lower() == "centered":
+    if who is centered or who == "centered" or str(who).lower() == "centered":
         text what id "what":
             style "centered_text"
             xalign 0.5
@@ -63,7 +63,7 @@ screen say(who, what):
         # Normal dialog box 
         
         # Character side image
-        if not renpy.variant("small"):
+        if (who is not None and who != "") and not renpy.variant("small"):
             add SideImage() xalign 0.0 yalign 1.0
 
         # Gray box

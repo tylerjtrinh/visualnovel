@@ -405,12 +405,46 @@ screen main_menu():
         xalign 0.75
         ypos 0.36
         spacing 22
-
-        textbutton "New Game" action Start() style "mm_btn" text_style "mm_btn_text"
-        textbutton "Load" action ShowMenu('load') style "mm_btn" text_style "mm_btn_text"
-        textbutton "Settings" action ShowMenu('preferences') style "mm_btn" text_style "mm_btn_text"
-        textbutton "About" action ShowMenu('about') style "mm_btn" text_style "mm_btn_text"
-        textbutton "Exit" action Quit() style "mm_btn" text_style "mm_btn_text"
+        button:
+            style "mm_btn" 
+            action Start()
+            hbox:
+                spacing 15 
+                xalign 0.14
+                add "icons/playicon.png" xsize 50 ysize 50
+                text "New Game" style "mm_btn_text"
+        button:
+            style "mm_btn" 
+            action ShowMenu('load')
+            hbox:
+                spacing 15 
+                xalign 0.07
+                add "icons/load_button.png" xsize 50 ysize 50
+                text "Load" style "mm_btn_text"
+        button:
+            style "mm_btn" 
+            action ShowMenu('preferences')
+            hbox:
+                spacing 15 
+                xalign 0.17
+                add "icons/settings.png" xsize 50 ysize 50
+                text "Settings" style "mm_btn_text"
+        button:
+            style "mm_btn" 
+            action ShowMenu('about')
+            hbox:
+                spacing 15 
+                xalign 0.11
+                add "icons/abouticon.png" xsize 50 ysize 50
+                text "About" style "mm_btn_text"
+        button:
+            style "mm_btn" 
+            action Quit()
+            hbox:
+                spacing 15 
+                xalign 0.07
+                add "icons/exiticon.png" xsize 50 ysize 50
+                text "Exit" style "mm_btn_text"
 
 
 style main_menu_frame is empty

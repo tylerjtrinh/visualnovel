@@ -2,7 +2,9 @@
 label a0s2:
     scene black with fade
     pause 1.0
-    centered "After a very lengthy explanation..."
+    show screen center_card_display("After a very length explanation...") with dissolve
+    pause 1
+    hide screen center_card_display
     
     scene bg grass_cutscene with dissolve
 

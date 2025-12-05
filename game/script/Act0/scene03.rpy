@@ -25,6 +25,12 @@ label a0s3:
     v "No, no… There’s no wrong answer."
     a angry "Feels like I found one."
     v "Well, it’s just that I wanted you to… I hoped you’d say something about…"
+    stop music
+    scene black with in_glitch
+    show screen title_card_display("Say IT!")
+    pause 1
+    hide screen title_card_display
+    scene bg starry_sky with dissolve 
     v sad "...It doesn’t matter. We can talk about it later."
     a slightsmile "No, something’s on your mind. Just tell me."
     v "It’s not something I can just spit out-"

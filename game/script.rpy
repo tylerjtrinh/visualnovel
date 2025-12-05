@@ -28,12 +28,25 @@ style title_card_text:
     
     text_align 0.5 
 
+style center_card_text: 
+    # Set size and color
+    size 30
+    color "#F5F5F5"     
+    text_align 0.5 
+
 # --- 2. SCREEN DEFINITION (Ensures Centering on Screen) ---
 
 screen title_card_display(content_of_text):
     zorder 10 
     fixed:
         text content_of_text style_prefix "title_card":
+            xalign 0.5
+            yalign 0.5
+
+screen center_card_display(content_of_text):
+    zorder 10 
+    fixed:
+        text content_of_text style_prefix "center_card":
             xalign 0.5
             yalign 0.5
 
@@ -48,7 +61,7 @@ label start:
     show screen title_card_display("Pass On") with dissolve
     pause 1.5
     hide screen title_card_display with dissolve
-    show screen title_card_display("Act 0") with dissolve
+    show screen title_card_display("Act 0: Valerie") with dissolve
     pause 2.0
     hide screen title_card_display with dissolve
     # 5. Pause for 1 second after the text is hidden.
@@ -58,10 +71,25 @@ label start:
 
     scene black
     pause 2.0
-    show screen title_card_display("Act 1") with dissolve
+    show screen title_card_display("Act 1: Ryan") with dissolve
     pause 2.0
     hide screen title_card_display with dissolve
     pause 1.0
     call a1 from _call_a1
+
+    scene black
+    pause 2.0
+    show screen title_card_display("Act 2: Jason") with dissolve
+    pause 2.0
+    hide screen title_card_display with dissolve
+    pause 1.0
+    call a2 from _call_a2
+
+    scene black
+    pause 2.0
+    show screen title_card_display("To be continued...") with dissolve
+    pause 4.0
+    hide screen title_card_display with dissolve
+    pause 1.0
     return
 #Minigame screens

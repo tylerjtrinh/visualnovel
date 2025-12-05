@@ -14,7 +14,6 @@
 
 define config.name = _("visualnovel")
 
-
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
@@ -151,7 +150,6 @@ define config.save_directory = "visualnovel-1761876848"
 
 define config.window_icon = "gui/window_icon.png"
 
-
 ## Build configuration #########################################################
 ##
 ## This section controls how Ren'Py turns your project into distribution files.
@@ -204,5 +202,3 @@ init python:
 
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
-
-# define build.itch_project = "renpytom/test-project"

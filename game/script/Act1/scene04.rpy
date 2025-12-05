@@ -2,14 +2,18 @@ label a1s4:
     #no minigames yet, that will take a long time
     menu: 
         "unimplemented minigame option: annoy this kid":
-            call a1s4Wife
+            call a1s4Wife from _call_a1s4Wife
+            return
+            
         "unimplemented minigame option: make tea for this kid":
-            call a1s4Anti
+            call a1s4Anti from _call_a1s4Anti
+            return
+            
 
 
 label a1s4Anti: 
-    a "Hey, Ryan."
-    r "Yup, I know what's up. I can smell the tea already."
+    a normal "Hey, Ryan."
+    r normal "Yup, I know what's up. I can smell the tea already."
     r "When'd you pick up brewing, anyway?"
     a "Valerie taught me how to, actually, a couple years back."
     r "Ah."
@@ -39,11 +43,13 @@ label a1s4Anti:
     #need backgroun void
     v "..."
     v "Not the choice I would've picked…"
+    return
+    
 
 label a1s4Wife:
-    r "Dude can you STOP?!"
+    r rage "Dude can you STOP?!"
     a "No."
-    r "Okay bro, what is up with you today?"
+    r angry "Okay bro, what is up with you today?"
     a "I dunno, maybe if you were being less of an asshole I might not be actively screwing up stuff."
     r "What? Just cause your wife died you think you can–"
     a "And that's the exact thinking that is making me do this."
@@ -52,7 +58,7 @@ label a1s4Wife:
     a "And I hate who you've become."
     a "So."
     a "Please, show yourself out the door."
-    r "Bro, what is goin' on?"
+    r normal "Bro, what is goin' on?"
     a "I'm sick of your shenanigans, Ryan."
     a "Leave."
     v "I would recommend you listen to what he's saying, you insensitive fuck."
@@ -64,3 +70,4 @@ label a1s4Wife:
     a "He changed. A lot. He used to be better than this."
     a "But…"
     a "He took several steps too far."
+    return
